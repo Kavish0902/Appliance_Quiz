@@ -1,0 +1,67 @@
+/* Base styles for the whole page */
+body {
+  font-family: sans-serif;           /* Use a clean sans-serif font */
+  background-color: #f9f9f9;         /* Light gray background for subtlety */
+  margin: 0;                         /* Remove default margin */
+  padding: 0;                        /* Remove default padding */
+}
+
+/* Main container that holds content centered on the page */
+.container {
+  max-width: 600px;                  /* Max width for readability */
+  margin: 50px auto;                 /* Center container horizontally with vertical margin */
+  background: white;                 /* White background for contrast */
+  padding: 2rem;                    /* Inner spacing around content */
+  border-radius: 10px;              /* Rounded corners for a modern look */
+  box-shadow: 0 0 10px rgba(0,0,0,0.1);  /* Soft shadow to lift container off page */
+}
+
+/* Styles for each question text */
+.question {
+  font-size: 1.2rem;                /* Slightly larger font size for readability */
+  margin-bottom: 1rem;              /* Space below question */
+}
+
+/* Each selectable answer box styling */
+.answer-box {
+  padding: 1rem;                   /* Padding inside each answer box */
+  margin: 0.5rem 0;                /* Vertical margin between answers */
+  border-radius: 8px;              /* Rounded corners */
+  border: 1px solid #ccc;          /* Light gray border */
+  cursor: pointer;                 /* Cursor changes to pointer on hover to show it's clickable */
+  transition: background 0.2s ease; /* Smooth background color transition on hover */
+}
+
+/* Hover effect on answers for better UX */
+.answer-box:hover {
+  background: #f0f0f0;             /* Light gray background on hover */
+}
+
+/* Style for the selected answer */
+.answer-box.selected {
+  background: #d0f0ff;             /* Light blue background when selected */
+  border-color: #00aaff;           /* Blue border for selection emphasis */
+}
+
+/* Container for navigation buttons (Back/Next) */
+.button-row {
+  display: flex;                   /* Use flexbox for layout */
+  justify-content: space-between; /* Space buttons apart */
+  margin-top: 1.5rem;             /* Space above buttons */
+}
+
+/* Styles for all buttons */
+button {
+  padding: 0.5rem 1rem;            /* Padding inside button */
+  font-size: 1rem;                 /* Readable font size */
+  border: none;                   /* Remove default border */
+  background: #00aaff;             /* Blue background */
+  color: white;                   /* White text */
+  border-radius: 5px;             /* Slightly rounded corners */
+  cursor: pointer;                /* Pointer cursor to indicate clickable */
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background: #008ecc;             /* Darker blue on hover */
+}

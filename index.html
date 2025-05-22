@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>You're Such A Toaster!</title>
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Landing screen container shown initially -->
+  <div id="landing" class="container">
+    <h1>You're Such A Toaster!</h1>   <!-- Main heading -->
+    <!-- Button to start the quiz; triggers startQuiz function on click -->
+    <button onclick="startQuiz()">Begin Quiz</button>
+  </div>
+
+  <!-- Quiz container hidden initially, will show questions dynamically -->
+  <div id="quiz-container" class="container" style="display: none;"></div>
+
+  <!-- Link to external JavaScript file -->
+  <script src="script.js"></script>
+</body>
+</html>
